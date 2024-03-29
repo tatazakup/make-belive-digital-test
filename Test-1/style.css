@@ -1,0 +1,68 @@
+:root {
+    --royal-blue: #0165ff;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #c1c1c1;
+
+    --border-contain-width: 5px;
+}
+
+.relative { position: relative; }
+
+.blue-bg { background-color: var(--royal-blue); }
+.white-bg { background-color: var(--white); }
+
+.b-shadow { box-shadow: var(--gray) 0px 7px 4px -5px; }
+.t-shadow { box-shadow: var(--gray) 0px -7px 4px -5px; }
+
+.z-1 {z-index: 1}
+.z-2 {z-index: 2}
+.z-3 {z-index: 3}
+.z-4 {z-index: 4}
+
+body {
+    position: relative;
+    margin: 0; padding: 0;
+    height: 100dvh;
+    background-color: var(--royal-blue);
+    font-size: 5rem;
+}
+
+p {
+    margin: 0; padding: 0;
+}
+
+div#main-wrapper {
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 50%; height: 50%;
+}
+
+div#contain-wrapper {
+    display: grid;
+    grid-template-columns: [c1] 50% [c2] 50% [c3];
+    grid-template-rows: [r1] 50% [r2] 50% [r3];
+    height: 100%;
+    background-color: var(--black);
+    padding: 0.25rem;
+}
+
+.text-center {
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+
+div#white-label-1 {
+    position: absolute;
+    width: 0.25rem; height: 50%;
+    right: 0%;
+    background-color: var(--royal-blue);
+}
+
+div#white-label-2 {
+    position: absolute;
+    width: 0.25rem; height: 50%;
+    bottom: -0.25rem;
+    left: 0%;
+    background-color: var(--royal-blue);
+}
